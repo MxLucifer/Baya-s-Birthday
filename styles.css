@@ -1,0 +1,69 @@
+body {
+    background-color: #fc8eac;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.images-container {
+    display: flex;
+    align-items: center;
+}
+
+#cakeContainer {
+    align-items: center;
+    justify-content: center; /* Center vertically */
+    text-align: center;
+}
+
+#readMeBtn{
+    margin-top: 20px ;
+}
+
+.btn {
+    width: 250px;
+    height: 80px;
+    font-size: 1em;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 1em 2em;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    color: #000000;
+}
+
+.btn::before {
+    content: "";
+    display: block;
+    position: absolute;
+    inset: 0;
+    border-top: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    transition: all 0.5s ease;
+}
+
+.btn::after {
+    content: "";
+    display: block;
+    position: absolute;
+    inset: 0;
+    border-left: 2px solid #000000;
+    border-right: 2px solid #000000;
+    transition: all 0.5s ease;
+}
+
+.btn:hover::before {
+    transform: scale(1.1);
+}
+
+.btn:hover::after {
+    transform: scale(0);
+}
+
+video {
+    display: block;
+}
